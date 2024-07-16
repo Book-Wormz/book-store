@@ -1,7 +1,13 @@
-import React from "react"
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
-	return <div>NavBar</div>
-}
+	return (
+		<div>
+			{/* image */}
+			<NavLink />
+		</div>
+	);
+};
 
-export default NavBar
+export default NavBar;
