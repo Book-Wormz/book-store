@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react"
 
 const Home = () => {
@@ -5,6 +6,19 @@ const Home = () => {
 	useEffect(() => {
 		getBooks()
 	}, [])
+=======
+import React from "react";
+import SearchBar from "../components/SearchBar";
+
+const Home = () => {
+  return (
+    <div>
+      Home
+      <SearchBar />
+    </div>
+  );
+};
+>>>>>>> 945eb7c33173f0eacd88b684c0427ad6de64843e
 
 	const getBooks = async () => {
 		try {
