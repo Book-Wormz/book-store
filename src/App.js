@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Homepage";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+const App = () => {
+	return (
+		<>
+			<Header />
+			<Routes>
+				<Route path="/" element={<Home />} />
+			</Routes>
+			<Footer />
+		</>
+	);
+};
+=======
 import React, { useEffect, useState } from "react"
 import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
@@ -7,6 +26,7 @@ const App = () => {
 	// useEffect(() => {
 	// 	getBooks()
 	// }, [])
+>>>>>>> 1cf20f3d59bf14b0158e61a59ea2b090c0f12500
 
 	// const getBooks = async () => {
 	// 	try {
