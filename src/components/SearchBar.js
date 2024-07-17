@@ -39,7 +39,10 @@ const SearchBar = () => {
 
 	return (
 		<>
-			<form onSubmit={handleSearch} className="flex pb-2">
+			<form
+				onSubmit={handleSearch}
+				className="flex flex-col sm:flex-row items-center pb-2 space-y-2 z-10"
+			>
 				{/* <label>Search by Title or Author</label> */}
 				<input
 					className="text-m text-center border-2 border-black rounded-md w-80 mr-2"
@@ -56,7 +59,7 @@ const SearchBar = () => {
 					Search
 				</button>
 				<Link>
-					<AiOutlineShoppingCart className="h-8 w-8 ml-3" />
+					<AiOutlineShoppingCart className="h-8 w-8 ml-3 hidden sm:flex" />
 				</Link>
 			</form>
 			<div>

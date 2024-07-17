@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import NavButton from "./NavButton";
 
 const NavBar = () => {
 	return (
-		<div>
+		<div className="invisible sm:visible">
 			<NavButton url="/" buttonContent="Books" />
 			<span>|</span>
 			<NavButton url="/" buttonContent="Fiction" />
@@ -13,8 +13,6 @@ const NavBar = () => {
 			<NavButton url="/" buttonContent="Teen & YA" />
 			<span>|</span>
 			<NavButton url="/" buttonContent="Kids" />
-			<span>|</span>
-			<NavButton url="/" buttonContent="eBooks" />
 			<span>|</span>
 			<NavButton url="/" buttonContent="Magazines" />
 		</div>

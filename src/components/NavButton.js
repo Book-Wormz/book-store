@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavButton = ({ url, buttonContent }) => {
 	return (
-		<Link to={url} className="p-3 text-lg font-bold">
+		<Link to={url} className="p-3 text-md lg:text-lg font-bold">
 			<button>{buttonContent}</button>
 		</Link>
 	);
