@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const SearchBar = () => {
 	const [query, setQuery] = useState("");
@@ -37,10 +39,10 @@ const SearchBar = () => {
 
 	return (
 		<>
-			<form onSubmit={handleSearch}>
+			<form onSubmit={handleSearch} className="flex pb-2">
 				{/* <label>Search by Title or Author</label> */}
 				<input
-					className="text-lg border-2 border-black rounded-md w-96 mr-2"
+					className="text-m text-center border-2 border-black rounded-md w-80 mr-2"
 					type="text"
 					value={query}
 					onChange={(e) => setQuery(e.target.value)}
@@ -53,6 +55,9 @@ const SearchBar = () => {
 				>
 					Search
 				</button>
+				<Link>
+					<AiOutlineShoppingCart className="h-8 w-8 ml-3" />
+				</Link>
 			</form>
 			<div>
 				{books?.map((book) => (

@@ -5,7 +5,7 @@ const Home = () => {
 	return (
 		<div className="w-screen h-screen flex justify-center">
 			<div className="w-[80%] h-[300px] flex justify-around">
-				<Card />
+				{/* <Card /> */}
 			</div>
 		</div>
 	);
