@@ -41,7 +41,7 @@ const SearchBar = () => {
 		<>
 			<form
 				onSubmit={handleSearch}
-				className="flex flex-col sm:flex-row items-center pb-2 space-y-2 z-10"
+				className="flex flex-col sm:flex-row items-center pb-2 space-y-2 sm:space-y-0 z-10"
 			>
 				{/* <label>Search by Title or Author</label> */}
 				<input

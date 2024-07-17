@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NavButton from "./NavButton";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -33,34 +32,34 @@ const MobileMenu = () => {
 				}
 			>
 				<li className="py-6 text-4xl">
-					<NavButton to="books" onClick={handleClick}>
+					<Link to="books" onClick={handleClick}>
 						Books
-					</NavButton>
+					</Link>
 				</li>
 				<li className=" py-6 text-4xl">
-					<NavButton to="fiction" onClick={handleClick}>
+					<Link to="fiction" onClick={handleClick}>
 						Fiction
-					</NavButton>
+					</Link>
 				</li>
 				<li className=" py-6 text-4xl">
-					<NavButton to="nonfiction" onClick={handleClick}>
+					<Link to="nonfiction" onClick={handleClick}>
 						Nonfiction
-					</NavButton>
+					</Link>
 				</li>
 				<li className=" py-6 text-4xl">
-					<NavButton to="TeenYA" onClick={handleClick}>
+					<Link to="TeenYA" onClick={handleClick}>
 						Teen & YA
-					</NavButton>
+					</Link>
 				</li>
 				<li className=" py-6 text-4xl">
-					<NavButton to="kids" onClick={handleClick}>
+					<Link to="kids" onClick={handleClick}>
 						Kids
-					</NavButton>
+					</Link>
 				</li>
 				<li className=" py-6 text-4xl">
-					<NavButton to="magazines" onClick={handleClick}>
+					<Link to="magazines" onClick={handleClick}>
 						Magazines
-					</NavButton>
+					</Link>
 				</li>
 			</ul>
 		</>
