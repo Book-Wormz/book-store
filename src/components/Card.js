@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Card = () => {
 	const [books, setBooks] = useState([]);
+	const [query, setQuery] = useState("");
 	useEffect(() => {
 		getBooks();
 	}, []);
@@ -10,7 +11,7 @@ const Card = () => {
 	const getBooks = async () => {
 		try {
 			const getResponse = await fetch(
-				"https://www.googleapis.com/books/v1/volumes?q=fiction&orderBy=newest&maxResults=6"
+				`https://www.googleapis.com/books/v1/volumes?q=${query}&orderBy=newest&maxResults=6`
 			);
 			if (!getResponse.ok) {
 				throw new Error("Error on the get request for cats");
