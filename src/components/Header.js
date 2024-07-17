@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import SearchBar from "./SearchBar";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/Book-removebg-preview.png";
+// import Logo from "../assets/Book__1_-removebg-preview.png";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 import "../App.css";
@@ -14,6 +15,7 @@ const Header = () => {
 				<NavLink>
 					<img
 						className="h-60 w-60 mt-[-30px]"
+						// className="h-80 w-80 mt-[-20px]"
 						src={Logo}
 						alt="Book worms logo"
 					/>
