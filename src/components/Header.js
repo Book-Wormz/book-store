@@ -22,8 +22,10 @@ const Header = () => {
         <MobileMenu />
         <div className="mt-[100px] w-full sm:w-[90%] xl:ml-[-40px] sm:mt-[-55px] flex items-center justify-center flex-col-reverse xl:flex-row ">
           <NavBar />
-          <SearchBar />
-          <ShoppingCart />
+          <div className="flex">
+            <SearchBar />
+            <ShoppingCart />
+          </div>
         </div>
       </div>
     </div>
