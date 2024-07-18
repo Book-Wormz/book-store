@@ -19,7 +19,7 @@ const MobileMenu = () => {
 				</div>
 				<div>
 					<Link>
-						<AiOutlineShoppingCart className="h-8 w-8" />
+						<AiOutlineShoppingCart className="h-8 w-8 sm:hidden" />
 					</Link>
 				</div>
 			</div>
