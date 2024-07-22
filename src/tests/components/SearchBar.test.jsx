@@ -1,9 +1,14 @@
 import { render, screen } from "@testing-library/react";
 import SearchBar from "../../components/SearchBar";
+import { BrowserRouter } from "react-router-dom";
 
 describe("SearchBar", () => {
   const renderSearchBar = () => {
-    render(<SearchBar />);
+    render(
+      <BrowserRouter>
+        <SearchBar />
+      </BrowserRouter>
+    );
 
     return {
       inputField: screen.getByRole("textbox"),
