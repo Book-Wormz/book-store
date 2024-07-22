@@ -8,7 +8,7 @@ const SearchBar = () => {
   const navigate = useNavigate();
 
   const handleSearch = async (e) => {
-    e.preventDefault();
+    e?.preventDefault();
     // preventing default behavior of the form submission (to reload the page)
 
     try {

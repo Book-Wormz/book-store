@@ -4,6 +4,7 @@ import Home from "./pages/Homepage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SearchResults from "./pages/SearchResults";
+import NonFiction from "./pages/NonFiction";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/search-results" element={<SearchResults />} />
+        <Route path="/nonfiction" element={<NonFiction />} />
       </Routes>
       <Footer />
     </>
