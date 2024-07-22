@@ -6,7 +6,7 @@ const NavBar = () => {
 		<div className="invisible sm:visible">
 			<NavButton url="/" buttonContent="Books" />
 			<span>|</span>
-			<NavButton url="/" buttonContent="Fiction" />
+			<NavButton url="/fiction" buttonContent="Fiction" />
 			<span>|</span>
 			<NavButton url="/" buttonContent="Nonfiction" />
 			<span>|</span>
