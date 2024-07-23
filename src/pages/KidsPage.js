@@ -5,7 +5,7 @@ const Kids = () => {
   return (
     <div>
       <h1>Kids</h1>
-      <BookGrid genre="subject:children" volumes="&maxResults=40" />
+      <BookGrid genre="subject:magazine" volumes="&maxResults=40" />
     </div>
   );
 };
