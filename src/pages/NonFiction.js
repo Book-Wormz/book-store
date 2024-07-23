@@ -1,11 +1,11 @@
 import React from "react";
-import GenreCard from "../components/GenreCard";
+import BookGrid from "../components/BookGrid";
 
 const NonFiction = () => {
   return (
-    <div className="pb-5 pr-5 pl-5">
-      <h1 className="pb-5 pr-5 pl-5">Popular Nonfiction Books</h1>
-      <GenreCard genre={"nonfiction"} />
+    <div>
+      <h1>Nonfiction</h1>
+      <BookGrid genre="subject:nonfiction" volumes="&maxResults=40" />
     </div>
   );
 };
