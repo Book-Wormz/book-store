@@ -12,7 +12,7 @@ const NavBar = () => {
       <span>|</span>
       <NavButton url="/classics" buttonContent="Classics" />
       <span>|</span>
-      <NavButton url="/" buttonContent="Kids" />
+      <NavButton url="/kids" buttonContent="Kids" />
       <span>|</span>
       <NavButton url="/" buttonContent="Magazines" />
     </div>

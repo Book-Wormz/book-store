@@ -7,6 +7,7 @@ import SearchResults from "./pages/SearchResults";
 import Fiction from "./pages/FictionPage";
 import NonFiction from "./pages/NonFiction";
 import Classics from "./pages/Classics";
+import Kids from "./pages/Kids";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/nonfiction" element={<NonFiction />} />
         <Route path="/search-results" element={<SearchResults />} />
         <Route path="/classics" element={<Classics />} />
+        <Route path="/kids" element={<Kids />} />
       </Routes>
       <Footer />
     </>
