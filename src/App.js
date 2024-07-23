@@ -6,8 +6,8 @@ import Footer from "./components/Footer";
 import SearchResults from "./pages/SearchResults";
 import Fiction from "./pages/FictionPage";
 import NonFiction from "./pages/NonFiction";
-import Classics from "./pages/Classics";
-import Kids from "./pages/Kids";
+import Classics from "./pages/ClassicsPage";
+import Kids from "./pages/KidsPage";
 
 const App = () => {
   return (
