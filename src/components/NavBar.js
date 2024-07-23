@@ -8,7 +8,7 @@ const NavBar = () => {
 			<span>|</span>
 			<NavButton url="/fiction" buttonContent="Fiction" />
 			<span>|</span>
-			<NavButton url="/" buttonContent="Nonfiction" />
+	    <NavButton url="/nonfiction" buttonContent="Nonfiction" />
 			<span>|</span>
 			<NavButton url="/" buttonContent="Teen & YA" />
 			<span>|</span>
