@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "./Card";
+import BookGrid from "./BookGrid";
 
 const SortButton = ({ genre, volumes }) => {
 	const [sortOrder, setSortOrder] = useState("");
@@ -22,7 +22,7 @@ const SortButton = ({ genre, volumes }) => {
 					</li>
 				</ul>
 			</details>
-			<Card genre={genre} volumes={volumes} sortOrder={sortOrder} />
+			<BookGrid genre={genre} volumes={volumes} sortOrder={sortOrder} />
 		</>
 	);
 };
