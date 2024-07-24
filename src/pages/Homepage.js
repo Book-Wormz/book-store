@@ -3,7 +3,7 @@ import BookGrid from "../components/BookGrid";
 
 const Home = () => {
 	return (
-		<div>
+		<div className=" h-screen w-screen bg-[#efefea] ">
 			<h1>BOOKS</h1>
 			<h2>New in fiction</h2>
 			<BookGrid
