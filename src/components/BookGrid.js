@@ -1,10 +1,10 @@
-import Sort from "./Sort";
+import Card from "./Card";
 
-const BookGrid = ({ genre, volumes }) => {
+const BookGrid = ({ genre, volumes, sortOrder }) => {
 	return (
-		<div className="w-screen h-screen flex flex-col items-start">
+		<div className="w-screen h-dvh flex flex-col items-start">
 			<div className="w-full">
-				<Sort genre={genre} volumes={volumes} />
+				<Card genre={genre} volumes={volumes} sortOrder={sortOrder} />
 			</div>
 		</div>
 	);
