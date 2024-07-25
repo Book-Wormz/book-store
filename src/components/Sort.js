@@ -17,14 +17,14 @@ const SortButton = ({ genre, volumes }) => {
     <>
       <div className="dropdown p-3 pl:2 md:pl-4 lg:pl-12">
         <div
-          tabindex="0"
+          tabIndex="0"
           role="button"
           className="btn bg-sortGrey-10 text-white hover:text-sortGrey-20 p-2"
         >
           Sort by: {displayedOrder}
         </div>
         <ul
-          tabindex="0"
+          tabIndex="0"
           className="dropdown-content menu bg-white rounded-box z-[1] shadow"
         >
           <li>

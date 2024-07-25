@@ -10,11 +10,13 @@ import "../App.css";
 
 const Header = () => {
   return (
-    <div className="flex md:flex-row align-middle p-5">
-      <NavLink to="/">
-        <img className="w-80" src={Logo} alt="Book worms logo" />
-      </NavLink>
+    <div className="flex flex-col md:flex-row align-middle p-5">
       <MobileMenu />
+      <div className="flex justify-center">
+        <NavLink to="/">
+          <img className="w-52 sm:w-80" src={Logo} alt="Book worms logo" />
+        </NavLink>
+      </div>
       <div className="flex items-center justify-center flex-col-reverse xl:flex-row ml-5 mt-3">
         <NavBar />
         <div className="flex">
