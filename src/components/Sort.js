@@ -15,11 +15,18 @@ const SortButton = ({ genre, volumes }) => {
 
   return (
     <>
-      <details className="dropdown p-10">
-        <summary className="btn bg-sortGrey-10 text-white hover:text-sortGrey-20 p-2">
+      <div className="dropdown p-10">
+        <div
+          tabindex="0"
+          role="button"
+          className="btn bg-sortGrey-10 text-white hover:text-sortGrey-20 p-2"
+        >
           Sort by: {displayedOrder}
-        </summary>
-        <ul className="dropdown-content menu bg-white rounded-box z-[1] shadow">
+        </div>
+        <ul
+          tabindex="0"
+          className="dropdown-content menu bg-white rounded-box z-[1] shadow"
+        >
           <li>
             <div onClick={() => handleSort("&orderBy=relevance")}>
               Relevance
@@ -29,7 +36,7 @@ const SortButton = ({ genre, volumes }) => {
             <div onClick={() => handleSort("&orderBy=newest")}>Newest</div>
           </li>
         </ul>
-      </details>
+      </div>
       <BookGrid genre={genre} volumes={volumes} sortOrder={sortOrder} />
     </>
   );
