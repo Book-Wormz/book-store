@@ -12,6 +12,9 @@ module.exports = {
           20: "#384D6A",
         },
       },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   plugins: [require("daisyui")],
