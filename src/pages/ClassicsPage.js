@@ -1,11 +1,11 @@
 import React from "react";
-import BookGrid from "../components/BookGrid";
+import Sort from "../components/Sort";
 
 const Classics = () => {
   return (
     <div>
       <h1>Classics</h1>
-      <BookGrid genre="subject:classics" volumes="&maxResults=40" />
+      <Sort genre="subject:classics" volumes="&maxResults=40" />
     </div>
   );
 };
