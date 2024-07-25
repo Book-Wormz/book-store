@@ -15,7 +15,7 @@ const SortButton = ({ genre, volumes }) => {
 
   return (
     <>
-      <div className="dropdown p-10">
+      <div className="dropdown p-3 pl:2 md:pl-4 lg:pl-12">
         <div
           tabindex="0"
           role="button"
