@@ -16,8 +16,10 @@ const SortButton = ({ genre, volumes }) => {
   return (
     <>
       <details className="dropdown p-10">
-        <summary className="btn m-1">Sort by: {displayedOrder}</summary>
-        <ul className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        <summary className="btn bg-sortGrey-10 text-white hover:text-sortGrey-20 p-2">
+          Sort by: {displayedOrder}
+        </summary>
+        <ul className="dropdown-content menu bg-white rounded-box z-[1] shadow">
           <li>
             <div onClick={() => handleSort("&orderBy=relevance")}>
               Relevance
