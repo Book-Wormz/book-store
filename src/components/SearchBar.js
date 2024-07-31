@@ -13,7 +13,7 @@ const SearchBar = () => {
 
     try {
       const response = await fetch(
-        `https://www.googleapis.com/books/v1/volumes?q=${query}`
+        `https://openlibrary.org/search.json?q=${query}`
       );
 
       if (!response.ok) {
@@ -21,13 +21,12 @@ const SearchBar = () => {
       }
 
       const data = await response.json();
-      setBooks(data.items || []);
-      // items property of the data obj should be arr of book objs returned by the api
+      setBooks(data.docs || []);
       // || [] jic data.items is undefined or null- prevents potential errors downstream with iteration etc
 
       navigate(`/search-results`, {
         state: {
-          books: data.items,
+          books: data.docs,
           error: "",
           query: query,
         },
