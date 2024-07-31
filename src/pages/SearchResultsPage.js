@@ -15,8 +15,8 @@ const SearchResults = () => {
       <div>
         {books?.map((book) => (
           <ul key={book.id}>
-            <li>{book.volumeInfo.title}</li>
-            <li>{book.volumeInfo.authors?.join(", ")}</li>
+            <li>{book.title}</li>
+            <li>{book.author_name?.join(", ")}</li>
             {/* .join(", ") method doesn't return an error if there's only one str in the arr- it just returns that single string */}
           </ul>
         ))}
