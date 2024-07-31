@@ -1,4 +1,5 @@
 import React from "react";
+import Sort from "../components/Sort";
 import SortButton from "../components/Sort";
 import Card from "../components/Card";
 

@@ -52,22 +52,21 @@ const SearchBar = () => {
     <>
       <form
         onSubmit={handleSearch}
-        className="flex flex-col sm:flex-row items-center pb-2 space-y-2 sm:space-y-0 z-10"
+        className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 z-10"
       >
-        <input
-          className="text-m border-2 border-black rounded-md w-80 mr-2 px-1"
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search by Title, Author, Keyword or ISBN"
-          aria-label="Search by Title, Author, Keyword or ISBN"
-        />
-        <button
-          className=" font-bold text-lg w-20 border-2 border-black rounded"
-          type="submit"
-        >
-          Search
-        </button>
+        <div className="flex">
+          <input
+            className="text-m rounded-tl-md rounded-bl-md w-44 h-6 sm:w-80 sm:h-8 px-1"
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search by Title, Author, Keyword or ISBN"
+            aria-label="Search by Title, Author, Keyword or ISBN"
+          />
+          <button className="flex items-center justify-center font-bold text-md sm:text-lg w-16 sm:w-20 h-6 sm:h-8 border-1 border-white rounded-tr-md rounded-br-md">
+            Search
+          </button>
+        </div>
       </form>
     </>
   );

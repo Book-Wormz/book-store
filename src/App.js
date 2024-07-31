@@ -10,20 +10,20 @@ import Classics from "./pages/ClassicsPage";
 import Kids from "./pages/KidsPage";
 
 const App = () => {
-	return (
-		<>
-			<Header />
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/fiction" element={<Fiction />} />
-				<Route path="/nonfiction" element={<NonFiction />} />
-				<Route path="/search-results" element={<SearchResults />} />
-				<Route path="/classics" element={<Classics />} />
-				<Route path="/kids" element={<Kids />} />
-			</Routes>
-			<Footer />
-		</>
-	);
+  return (
+    <div className="bg-mainBeige-10">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/fiction" element={<Fiction />} />
+        <Route path="/nonfiction" element={<NonFiction />} />
+        <Route path="/search-results" element={<SearchResults />} />
+        <Route path="/classics" element={<Classics />} />
+        <Route path="/kids" element={<Kids />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
