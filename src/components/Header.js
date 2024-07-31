@@ -11,7 +11,7 @@ import "../App.css";
 const Header = () => {
 	return (
 		<>
-			<div className="absolute">
+			<div className="fixed w-screen">
 				<div className="z-0 mt-[20px] flex flex-col md:flex-row justify-between  pl-2 sm:pl-5 pr-2 sm:pr-5">
 					<NavLink>
 						<img
@@ -30,7 +30,7 @@ const Header = () => {
 					</div>
 				</div>
 			</div>
-			<div className="h-36"></div>
+			<div className="h-36 w-screen"></div>
 		</>
 	);
 };

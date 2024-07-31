@@ -21,3 +21,7 @@
 # add view more buttons to homepage sections
 
 # make page body scrollable with fixed header and footer
+
+# Take out down pipe after kids unless add another genre
+
+# style nav bar on large screen

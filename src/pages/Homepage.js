@@ -4,7 +4,9 @@ import BookGrid from "../components/BookGrid";
 const Home = () => {
 	return (
 		<div className=" h-screen w-screen bg-[#efefea] ">
-			<h1>BOOKS</h1>
+			<h1 className=" flex justify-center font-bold text-5xl text-black  ">
+				BOOKS
+			</h1>
 			<h2>New in fiction</h2>
 			<BookGrid
 				genre="subject:fiction"

@@ -1,13 +1,15 @@
 import React from "react";
-import BookGrid from "../components/BookGrid";
+import SortButton from "../components/Sort";
 
 const NonFiction = () => {
-  return (
-    <div>
-      <h1>Nonfiction</h1>
-      <BookGrid genre="subject:nonfiction" volumes="&maxResults=40" />
-    </div>
-  );
+	return (
+		<div className="mt-[125px]">
+			<h1 className="flex justify-center font-bold text-5xl text-black">
+				Nonfiction
+			</h1>
+			<SortButton genre="subject:nonfiction" volumes="&maxResults=40" />
+		</div>
+	);
 };
 
 export default NonFiction;
